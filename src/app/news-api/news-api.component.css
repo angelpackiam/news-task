@@ -1,0 +1,76 @@
+.title-bar {
+    background-color: #630b05;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab-menu {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-image {
+    width: 150px;
+    height: 150px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.news-title {
+    margin: 0;
+}
+
+.news-description {
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.know-more {
+    margin-top: 5px;
+}
+
+.clear-float {
+    clear: both;
+}
+
+/deep/body .ui-card {
+    box-shadow: none;
+    background-color: #dce0dc;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/deep/body .ui-card-body {
+    padding: 0 1em;
+}
+
+/deep/body .ui-tabview .ui-tabview-panels {
+    padding: 0;
+    border: none;
+}
+
+/deep/body .ui-tabview.ui-tabview-top .ui-tabview-nav li {
+    background-color: #ff0000;
+    width: 16.4%;
+}
+
+/deep/body .ui-tabview.ui-tabview-top .ui-tabview-nav li a {
+    color: #ffffff;
+}
+
+.left-align {
+    float: left;
+}
+
+.right-align {
+    float: right;
+}

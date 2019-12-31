@@ -1,0 +1,27 @@
+<header class="title-bar">
+    <h1 class="title">News API</h1>
+</header>
+<div class="tab-menu">
+    <p-tabView (onChange)="handleChange($event)">
+        <p-tabPanel [header]="item" *ngFor="let item of tabMenuItems; let i = index" [selected]="i == 0">
+            <p-card *ngFor="let news of newsList; let newsIndex = index">
+                <section class="ui-g-10" [ngClass]="{'left-align': newsIndex%2 ===0, 'right-align': newsIndex%2 !=0}">
+                    <p-header>
+                        <h3 class="news-title">{{news.title}}</h3>
+                        <span><b>news by:</b> {{news.author}}</span>
+                    </p-header>
+                    <article class="news-description">
+                        <p>{{news.description}}</p>
+                    </article>
+                    <p-footer>
+                        <p class="know-more">read more at <b><a class="news-link" href={{news.url}}>Academy</a></b></p>
+                    </p-footer>
+                </section>
+                <section class="ui-g-2" [ngClass]="{'right-align': newsIndex%2 ===0, 'left-align': newsIndex%2 !=0}">
+                    <img src="Card" src={{news.urlToImage}} class="news-image" >
+                </section>
+                <div class="clear-float"></div>
+            </p-card>
+        </p-tabPanel>
+    </p-tabView>
+</div>
